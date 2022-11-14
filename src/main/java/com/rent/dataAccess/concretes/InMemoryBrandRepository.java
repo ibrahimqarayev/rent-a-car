@@ -2,10 +2,12 @@ package com.rent.dataAccess.concretes;
 
 import com.rent.dataAccess.abstracts.BrandRepository;
 import com.rent.entities.concretes.Brand;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class InMemoryBrandRepository implements BrandRepository {
 
     List<Brand> brands;
