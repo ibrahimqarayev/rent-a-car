@@ -13,7 +13,7 @@ import java.util.List;
 public class BrandManager implements BrandService {
     private BrandRepository brandRepository;
 
-    @Autowired
+
     public BrandManager(BrandRepository brandRepository) {
         this.brandRepository = brandRepository;
     }
