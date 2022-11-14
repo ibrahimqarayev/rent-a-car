@@ -13,7 +13,7 @@ public class InMemoryBrandRepository implements BrandRepository {
     List<Brand> brands;
 
     public InMemoryBrandRepository() {
-        brands = new ArrayList<Brand>();
+        brands = new ArrayList<>();
         brands.add(new Brand(1, "BMW"));
         brands.add(new Brand(2, "Audi"));
         brands.add(new Brand(3, "Mercedes"));
