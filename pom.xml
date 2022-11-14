@@ -25,6 +25,12 @@
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
