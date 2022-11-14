@@ -18,7 +18,6 @@ public class BrandsController {
 
     private BrandService brandService;
 
-    @Autowired
     public BrandsController(BrandService brandService) {
         this.brandService = brandService;
     }
