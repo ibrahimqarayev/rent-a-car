@@ -1,13 +1,17 @@
 package com.rent.entities.concretes;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 
-
+@Entity
 @Table(name = "brands")
 public class Brand {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
+
+    @Column(name = "name")
     private String name;
 
     public Brand() {
