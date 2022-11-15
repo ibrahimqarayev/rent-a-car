@@ -1,8 +1,8 @@
 package com.rent.webApi.controllers;
 
 
-
 import com.rent.bussiness.abstracts.BrandService;
+import com.rent.bussiness.responses.GetAllBrandsResponse;
 import com.rent.entities.concretes.Brand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,8 +23,8 @@ public class BrandsController {
     }
 
     @GetMapping
-    public List<Brand> getAll() {
-     return brandService.getAll();
+    public List<GetAllBrandsResponse> getAll() {
+        return brandService.getAll();
     }
 }
 
