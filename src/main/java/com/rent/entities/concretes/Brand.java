@@ -1,5 +1,11 @@
 package com.rent.entities.concretes;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
+
+@Table(name = "brands")
 public class Brand {
     private int id;
     private String name;
