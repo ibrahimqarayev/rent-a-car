@@ -9,9 +9,8 @@ import org.springframework.stereotype.Service;
 
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 
 @Service
 public class BrandManager implements BrandService {
@@ -36,9 +35,9 @@ public class BrandManager implements BrandService {
     }
 
     @Override
-    public void addBrand(CreateBrandRequest createBrandRequest)  {
+    public void addBrand(CreateBrandRequest createBrandRequest) {
         Brand brand = new Brand();
-            brand.setName(createBrandRequest.getName());
-            brandRepository.save(brand);
+        brand.setName(createBrandRequest.getName());
+        brandRepository.save(brand);
     }
 }
