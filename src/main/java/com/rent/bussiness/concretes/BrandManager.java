@@ -21,6 +21,18 @@ public class BrandManager implements BrandService {
         this.brandRepository = brandRepository;
     }
 
+    @Override
+    public List<GetAllBrandsResponse> getAll() {
+        List<Brand> brands = brandRepository.findAll();
+        List<GetAllBrandsResponse> responseList = new ArrayList<>();
+        for (Brand brand : brands) {
+            GetAllBrandsResponse brandsResponse = new GetAllBrandsResponse();
+            brandsResponse.setId(brand.getId());
+            brandsResponse.setName(brand.getName());
+            responseList.add(brandsResponse);
+        }
+        return responseList;
+    }
 
     @Override
     public void addBrand(CreateBrandRequest createBrandRequest) {
