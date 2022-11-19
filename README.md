@@ -2,3 +2,4 @@
 - Spring Boot
 - Spring Data
 - Swagger
+- MySQL
